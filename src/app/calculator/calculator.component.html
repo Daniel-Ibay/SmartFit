@@ -1,0 +1,115 @@
+<section class="calculator-section">
+  <div class="calculator">
+    <div class="calculator-left">
+      <div class="sex-frame">
+        <h2>Sex</h2>
+        <div>
+          <svg
+            (click)="setSex('woman'); checkFields()"
+            class="girl-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            height="60px"
+            viewBox="0 -960 960 960"
+            width="60px"
+            (ngModelChange)="checkFields()"
+          >
+            <path
+              d="M400-80v-240H280l122-308q10-24 31-38t47-14q26 0 47 14t31 38l122 308H560v240H400Zm80-640q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720Z"
+            />
+          </svg>
+          <svg
+            (click)="setSex('man'); checkFields()"
+            class="man-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            height="60px"
+            viewBox="0 -960 960 960"
+            width="60px"
+            (ngModelChange)="checkFields()"
+          >
+            <path
+              d="M400-80v-280h-80v-240q0-33 23.5-56.5T400-680h160q33 0 56.5 23.5T640-600v240h-80v280H400Zm80-640q-33 0-56.5-23.5T400-800q0-33 23.5-56.5T480-880q33 0 56.5 23.5T560-800q0 33-23.5 56.5T480-720Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="years-frame">
+        <h2>Years</h2>
+        <input
+          type="number"
+          placeholder="years"
+          [min]="0"
+          [max]="120"
+          [(ngModel)]="years"
+          (ngModelChange)="checkFields()"
+        />
+      </div>
+      <div class="height-frame">
+        <h2>Height</h2>
+        <input
+          type="number"
+          placeholder="cm"
+          min="0"
+          max="240"
+          [(ngModel)]="height"
+          (ngModelChange)="checkFields()"
+        />
+      </div>
+      <div class="weight-frame">
+        <h2>Weight</h2>
+        <input
+          type="number"
+          placeholder="kg"
+          min="0"
+          max="240"
+          [(ngModel)]="weight"
+          (ngModelChange)="checkFields()"
+        />
+      </div>
+    </div>
+    <div class="calculator-right">
+      <h2>Activity</h2>
+      <div
+        class="calculator-container"
+        (click)="setActivity('sedentary'); checkFields()"
+      >
+        <h3>Sedentary</h3>
+        <p>Minimal physical activity, mostly sitting or lying down.</p>
+      </div>
+      <div
+        class="calculator-container"
+        (click)="setActivity('light'); checkFields()"
+      >
+        <h3>Lightly active</h3>
+        <p>Occasional light exercise or daily walks.</p>
+      </div>
+      <div
+        class="calculator-container"
+        (click)="setActivity('moderate'); checkFields()"
+      >
+        <h3>Moderately Active</h3>
+        <p>Regular workouts or an active lifestyle.</p>
+      </div>
+      <div
+        class="calculator-container"
+        (click)="setActivity('high'); checkFields()"
+      >
+        <h3>Very Active</h3>
+        <p>Intense training or physically demanding work.</p>
+      </div>
+    </div>
+  </div>
+  <div class="result-container">
+    <h1 class="result-title">Result</h1>
+    @if (allFields) {
+    <div class="results-calories">
+      <h2 class="result-bulk">Bulking Calories: {{ bulkCalories }}kcal</h2>
+      <h2 class="result-maintenance">
+        Maintenance Calories: {{ calories }}kcal
+      </h2>
+      <h2 class="result-cut">Cuting Calories: {{ cutCalories }}kcal</h2>
+    </div>
+    }@else {
+    <h2>Complete all fields</h2>
+    }
+  </div>
+</section>

@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: var(--gray-mega-light);
+  border-radius: 16px;
+  padding: 16px 24px 16px 24px;
+  width: fit-content;
+
+  h3 {
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  h3:hover {
+    transform: scale(105%);
+    opacity: 85%;
+    transition-duration: 200ms;
+  }
+}

@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --background-color: white;
+  --text-color: black;
+  --white: #fff;
+  --gray-mega-light: #ececec;
+  --gray-extra-light: #d0d0d0;
+  --gray-light: #afafaf;
+  --gray: #808080;
+  --gray-dark: #3a3a3a;
+  --gray-darker: #1f1f1f;
+  --black: #000;
+  --light-lime: #ffffb4;
+  --lime: #dcf47b;
+  --dark-lime: #495c25;
+}
+
+.dark-theme {
+  --background-color: #000;
+  --text-color: white;
+  --white: #000;
+  --gray-mega-light: #1f1f1f;
+  --gray-extra-light: #3a3a3a;
+  --gray-light: #808080;
+  --gray: #afafaf;
+  --gray-dark: #d0d0d0;
+  --gray-darker: #ececec;
+  --black: #fff;
+  --light-lime: #5c2553;
+  --lime: #f47be0;
+  --dark-lime: #ffdff3;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--gray-darker);
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

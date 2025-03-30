@@ -1,0 +1,48 @@
+.cards-container {
+  margin: auto;
+  padding: 2rem 0rem;
+  .card-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 2rem;
+    margin: auto;
+    gap: 2rem;
+    box-shadow: 2px 4px 4px hsla(0, 0%, 0%, 25%);
+    border-radius: 16px;
+
+    .exercise-card-img-container {
+      padding: 1rem;
+
+      .exercise-card-img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.5s ease;
+      }
+
+      .exercise-card-img:hover {
+        transform: scale(105%);
+      }
+    }
+
+    .exercise-card-text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .exercise-card-title {
+        width: 1000px;
+        margin: 0;
+      }
+
+      .exercise-card-info {
+        width: 1000px;
+        line-height: 3rem;
+        font-weight: 500;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

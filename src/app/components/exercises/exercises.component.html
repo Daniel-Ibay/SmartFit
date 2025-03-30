@@ -1,0 +1,4 @@
+<app-header></app-header>
+@for (exercise of exercisesData; track exercise.id) {
+<app-exercise-card [exerciseInfo]="exercise"></app-exercise-card>
+}

@@ -1,0 +1,96 @@
+<app-header></app-header>
+<section class="routine-section">
+  <div class="routine-title-container">
+    <h1 class="routine-title">Add Session</h1>
+  </div>
+  <div class="add-session-container">
+    <form
+      class="add-session-form"
+      [formGroup]="routineForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <div class="add-session-input-container">
+        <div class="category-input-container">
+          <h2>Category:</h2>
+          <input placeholder="chest" formControlName="category" />
+        </div>
+        <div class="day-input-container">
+          <h2>Day:</h2>
+          <select formControlName="day">
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Fridayday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+          </select>
+        </div>
+        <div class="exercises-input-container">
+          <h2>Exercises:</h2>
+          <div>
+            <input
+              placeholder="Bench Press"
+              [(ngModel)]="exerciseInput"
+              [ngModelOptions]="{ standalone: true }"
+            />
+            @for (exercise of exercises; track $index) {
+            <h3>{{ exercise }}</h3>
+            }
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="100px"
+            viewBox="0 -960 960 960"
+            width="100px"
+            (click)="addExercise()"
+          >
+            <path
+              d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"
+            />
+          </svg>
+        </div>
+      </div>
+      <button type="submit">Add session</button>
+    </form>
+  </div>
+  <div class="routine-title-container">
+    <h1 class="routine-title">Week Routine</h1>
+  </div>
+  <div class="week-routine-container">
+    <div class="day-container">
+      <h2>Monday</h2>
+      <h3 (click)="setActiveDay('Monday')" class="session-day-text">
+        {{ weekRoutine["Monday"].category }}
+      </h3>
+    </div>
+    <div class="day-container">
+      <h2>Tuesday</h2>
+      <h3 class="session-day-text">{{ weekRoutine["Tuesday"].category }}</h3>
+    </div>
+    <div class="day-container">
+      <h2>Wednesday</h2>
+      <h3 class="session-day-text">{{ weekRoutine["Wednesday"].category }}</h3>
+    </div>
+    <div class="day-container">
+      <h2>Thursday</h2>
+      <h3 class="session-day-text">{{ weekRoutine["Thursday"].category }}</h3>
+    </div>
+    <div class="day-container">
+      <h2>Friday</h2>
+      <h3 class="session-day-text">{{ weekRoutine["Friday"].category }}</h3>
+    </div>
+    <div class="day-container">
+      <h2>Saturday</h2>
+      <h3 class="session-day-text">{{ weekRoutine["Saturday"].category }}</h3>
+    </div>
+    <div class="day-container">
+      <h2>Sunday</h2>
+      <h3 class="session-day-text">{{ weekRoutine["Sunday"].category }}</h3>
+    </div>
+  </div>
+  <div class="routine-exercises-container">
+    <h1>Exercises:</h1>
+    <h1>{{ activeDayExercises }}</h1>
+  </div>
+</section>
