@@ -18,12 +18,26 @@ export class CalculatorComponent {
   cutCalories?: number;
   bulkCalories?: number;
 
+  activeWoman: boolean = false;
+  activeMan: boolean = false;
+
+  activeSedentary: boolean = false;
+  activeLight: boolean = false;
+  activeModerate: boolean = false;
+  activeHigh: boolean = false;
+
   setSex(sex: string) {
     this.sex = sex;
+    this.activeWoman = sex === 'woman';
+    this.activeMan = sex === 'man';
   }
 
   setActivity(activity: string) {
     this.activity = activity;
+    this.activeSedentary = activity === 'sedentary';
+    this.activeLight = activity === 'light';
+    this.activeModerate = activity === 'moderate';
+    this.activeHigh = activity === 'high';
   }
 
   activityValue(): number {
@@ -85,6 +99,8 @@ export class CalculatorComponent {
       this.height !== undefined && this.height >= 0 && this.height <= 240;
     const isWeightValid =
       this.weight !== undefined && this.weight >= 0 && this.weight <= 240;
+
+    console.log(this.activeMan, this.activeWoman, this.sex);
 
     this.allFields =
       isSexValid &&

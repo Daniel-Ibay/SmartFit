@@ -66,27 +66,39 @@
     </div>
     <div class="day-container">
       <h2>Tuesday</h2>
-      <h3 class="session-day-text">{{ weekRoutine["Tuesday"].category }}</h3>
+      <h3 (click)="setActiveDay('Tuesday')" class="session-day-text">
+        {{ weekRoutine["Tuesday"].category }}
+      </h3>
     </div>
     <div class="day-container">
       <h2>Wednesday</h2>
-      <h3 class="session-day-text">{{ weekRoutine["Wednesday"].category }}</h3>
+      <h3 (click)="setActiveDay('Wednesday')" class="session-day-text">
+        {{ weekRoutine["Wednesday"].category }}
+      </h3>
     </div>
     <div class="day-container">
       <h2>Thursday</h2>
-      <h3 class="session-day-text">{{ weekRoutine["Thursday"].category }}</h3>
+      <h3 (click)="setActiveDay('Thursday')" class="session-day-text">
+        {{ weekRoutine["Thursday"].category }}
+      </h3>
     </div>
     <div class="day-container">
       <h2>Friday</h2>
-      <h3 class="session-day-text">{{ weekRoutine["Friday"].category }}</h3>
+      <h3 (click)="setActiveDay('Friday')" class="session-day-text">
+        {{ weekRoutine["Friday"].category }}
+      </h3>
     </div>
     <div class="day-container">
       <h2>Saturday</h2>
-      <h3 class="session-day-text">{{ weekRoutine["Saturday"].category }}</h3>
+      <h3 (click)="setActiveDay('Saturday')" class="session-day-text">
+        {{ weekRoutine["Saturday"].category }}
+      </h3>
     </div>
     <div class="day-container">
       <h2>Sunday</h2>
-      <h3 class="session-day-text">{{ weekRoutine["Sunday"].category }}</h3>
+      <h3 (click)="setActiveDay('Sunday')" class="session-day-text">
+        {{ weekRoutine["Sunday"].category }}
+      </h3>
     </div>
   </div>
   <div class="routine-exercises-container">

@@ -98,7 +98,5 @@ export class RoutinePlannerComponent {
       this.routineForm.reset();
       this.exercises = [];
     }
-
-    console.log(this.weekRoutine);
   }
 }

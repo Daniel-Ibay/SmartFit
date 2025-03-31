@@ -6,6 +6,7 @@
         <div>
           <svg
             (click)="setSex('woman'); checkFields()"
+            [class.girl-svg-active]="activeWoman"
             class="girl-svg"
             xmlns="http://www.w3.org/2000/svg"
             height="60px"
@@ -19,6 +20,7 @@
           </svg>
           <svg
             (click)="setSex('man'); checkFields()"
+            [class.man-svg-active]="activeMan"
             class="man-svg"
             xmlns="http://www.w3.org/2000/svg"
             height="60px"
@@ -69,6 +71,7 @@
     <div class="calculator-right">
       <h2>Activity</h2>
       <div
+        [class.calculator-container-active]="activeSedentary"
         class="calculator-container"
         (click)="setActivity('sedentary'); checkFields()"
       >
@@ -76,6 +79,7 @@
         <p>Minimal physical activity, mostly sitting or lying down.</p>
       </div>
       <div
+        [class.calculator-container-active]="activeLight"
         class="calculator-container"
         (click)="setActivity('light'); checkFields()"
       >
@@ -83,6 +87,7 @@
         <p>Occasional light exercise or daily walks.</p>
       </div>
       <div
+        [class.calculator-container-active]="activeModerate"
         class="calculator-container"
         (click)="setActivity('moderate'); checkFields()"
       >
@@ -90,6 +95,7 @@
         <p>Regular workouts or an active lifestyle.</p>
       </div>
       <div
+        [class.calculator-container-active]="activeHigh"
         class="calculator-container"
         (click)="setActivity('high'); checkFields()"
       >
