@@ -43,6 +43,7 @@
 
           svg {
             margin: auto;
+            cursor: pointer;
           }
 
           .girl-svg {
@@ -55,6 +56,7 @@
 
           .girl-svg-active {
             fill: var(--dark-lime);
+            cursor: default;
           }
 
           .man-svg {
@@ -67,6 +69,7 @@
 
           .man-svg-active {
             fill: var(--dark-lime);
+            cursor: default;
           }
         }
       }
@@ -76,6 +79,7 @@
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
+      text-align: center;
 
       h2 {
         margin-bottom: 0;
@@ -89,9 +93,10 @@
         background-color: var(--lime);
         gap: 1rem;
         padding: 0.5rem 1rem;
-        width: 481px;
+        width: 480px;
         height: 100px;
         border-radius: 0.5rem;
+        cursor: pointer;
 
         h3 {
           margin: 0;
@@ -113,6 +118,7 @@
       .calculator-container-active {
         background-color: var(--dark-lime);
         box-shadow: inset 0 0 0 5px var(--lime);
+        cursor: default;
 
         h3 {
           color: var(--lime);
@@ -132,6 +138,219 @@
 
     h1 {
       text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .calculator-section {
+    padding: 3rem 2rem;
+    .calculator {
+      .calculator-left {
+        .sex-frame {
+        }
+
+        .years-frame {
+        }
+
+        .height-frame {
+        }
+
+        .weight-frame {
+        }
+      }
+
+      .calculator-right {
+        .calculator-container {
+        }
+      }
+    }
+    .result-container {
+      .result-title {
+      }
+
+      .results-calories {
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .calculator-section {
+    margin: auto;
+    flex-direction: column;
+    .calculator {
+      .calculator-left {
+        .sex-frame {
+        }
+
+        .years-frame {
+        }
+
+        .height-frame {
+        }
+
+        .weight-frame {
+        }
+      }
+
+      .calculator-right {
+        .calculator-container {
+        }
+      }
+    }
+    .result-container {
+      margin: auto;
+      .result-title {
+      }
+
+      .results-calories {
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .calculator-section {
+    padding: 60px 2rem;
+    flex-direction: column;
+    .calculator {
+      flex-direction: column;
+      .calculator-left {
+        width: 32rem;
+        margin: auto;
+        text-align: center;
+
+        input {
+          width: 480px;
+        }
+        .sex-frame {
+          width: 480px;
+
+          div {
+            width: 480px;
+          }
+        }
+
+        .years-frame {
+          width: 480px;
+        }
+
+        .height-frame {
+          width: 480px;
+        }
+
+        .weight-frame {
+          width: 480px;
+        }
+      }
+
+      .calculator-right {
+        margin: auto;
+        width: auto;
+        .calculator-container {
+        }
+      }
+    }
+    .result-container {
+      text-align: center;
+      .result-title {
+      }
+
+      .results-calories {
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .calculator-section {
+    .calculator {
+      .calculator-left {
+        width: 16rem;
+
+        input {
+          width: 15rem;
+        }
+        .sex-frame {
+          width: 15rem;
+
+          div {
+            width: 15rem;
+          }
+        }
+
+        .years-frame {
+          width: 15rem;
+        }
+
+        .height-frame {
+          width: 15rem;
+        }
+
+        .weight-frame {
+          width: 15rem;
+        }
+      }
+
+      .calculator-right {
+        width: 16rem;
+        .calculator-container {
+          width: 15rem;
+        }
+      }
+    }
+    .result-container {
+      .result-title {
+      }
+
+      .results-calories {
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .calculator-section {
+    .calculator {
+      .calculator-left {
+        width: 12rem;
+
+        input {
+          width: 10rem;
+        }
+        .sex-frame {
+          div {
+            width: 10rem;
+          }
+        }
+
+        .years-frame {
+          width: 10rem;
+        }
+
+        .height-frame {
+          width: 10rem;
+        }
+
+        .weight-frame {
+          width: 10rem;
+        }
+      }
+
+      .calculator-right {
+        width: 12rem;
+        .calculator-container {
+          width: 10rem;
+        }
+      }
+    }
+    .result-container {
+      .result-title {
+      }
+
+      .results-calories {
+      }
     }
   }
 }

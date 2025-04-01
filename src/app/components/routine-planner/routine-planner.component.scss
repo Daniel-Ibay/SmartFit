@@ -218,3 +218,222 @@
     }
   }
 }
+
+@media (max-width: 1800px) {
+  .routine-section {
+    text-align: center;
+    .routine-title-container {
+      padding: 3rem 2rem;
+      .routine-title {
+      }
+    }
+
+    .add-session-container {
+      padding: 3rem 2rem;
+      .add-session-form {
+        padding: 3rem 2rem;
+        width: auto;
+        min-width: 500px;
+        .add-session-input-container {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .week-routine-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .routine-exercises-container {
+      margin: auto;
+      justify-content: center;
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .routine-section {
+    .routine-title-container {
+      padding: 3rem 2rem;
+      .routine-title {
+      }
+    }
+
+    .add-session-container {
+      padding: 3rem 2rem;
+      .add-session-form {
+        padding: 3rem 2rem;
+        min-width: 500px;
+        .add-session-input-container {
+        }
+      }
+    }
+
+    .week-routine-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 2rem;
+    }
+
+    .routine-exercises-container {
+      padding: 3rem 2rem;
+      margin: auto;
+      justify-content: center;
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .routine-section {
+    .routine-title-container {
+      padding: 3rem 2rem;
+      .routine-title {
+      }
+    }
+
+    .add-session-container {
+      padding: 3rem 2rem;
+      .add-session-form {
+        margin: auto;
+        padding: 3rem 2rem;
+        width: 300px;
+        min-width: 300px;
+        gap: 2rem;
+        .add-session-input-container {
+          gap: 2rem;
+          .category-input-container {
+            width: 15rem;
+            input {
+              font-size: 1.5rem;
+            }
+          }
+
+          .day-input-container {
+            width: 15rem;
+          }
+
+          .exercises-input-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 15rem;
+            min-width: 15rem;
+            div {
+              input {
+                font-size: 1.5rem;
+              }
+            }
+
+            svg {
+              width: 2rem;
+              height: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    .week-routine-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 2rem;
+    }
+
+    .routine-exercises-container {
+      padding: 3rem 2rem;
+      margin: auto;
+      justify-content: center;
+      h1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .routine-section {
+    .routine-title-container {
+      padding: 1.5rem 2rem;
+      .routine-title {
+      }
+    }
+
+    .add-session-container {
+      padding: 1.5rem 2rem;
+      .add-session-form {
+        margin: auto;
+        padding: 1rem 0.5rem;
+        width: 250px;
+        min-width: 250px;
+        gap: 2rem;
+        font-size: 1rem;
+
+        button {
+          font-size: 1.5rem;
+          width: 200px;
+        }
+
+        .add-session-input-container {
+          padding: 0.5rem;
+          gap: 2rem;
+
+          .category-input-container {
+            flex-direction: column;
+            width: 12.5rem;
+            input {
+              font-size: 1.5rem;
+              width: 3rem;
+            }
+          }
+
+          .day-input-container {
+            width: 12.5rem;
+          }
+
+          .exercises-input-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 12.5rem;
+            min-width: 12.5rem;
+            div {
+              input {
+                font-size: 1.5rem;
+                width: 150px;
+              }
+            }
+
+            svg {
+              width: 2rem;
+              height: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    .week-routine-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 2rem;
+    }
+
+    .routine-exercises-container {
+      padding: 1.5rem 2rem;
+      margin: auto;
+      justify-content: center;
+      h1 {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

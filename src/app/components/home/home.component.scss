@@ -40,3 +40,99 @@
     }
   }
 }
+
+@media (max-width: 1800px) {
+  .home-section {
+    .home-container {
+      .home-title {
+        margin: 0;
+        font-size: 3rem;
+        width: 400px;
+      }
+
+      .home-subtitle {
+        width: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  .home-section {
+    margin: auto;
+    padding: 2rem;
+
+    .home-container {
+      margin: auto;
+    }
+
+    .home-img-container {
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-section {
+    flex-direction: column-reverse;
+
+    .home-container {
+      .home-title {
+        width: 600px;
+      }
+
+      .home-subtitle {
+        width: 600px;
+      }
+    }
+
+    .home-img-container {
+      padding: auto;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .home-section {
+    gap: 2rem;
+
+    .home-container {
+      .home-title {
+        width: 300px;
+      }
+
+      .home-subtitle {
+        width: 300px;
+      }
+    }
+
+    .home-img-container {
+      width: 300px;
+      height: 350px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .home-section {
+    gap: 1rem;
+
+    .home-container {
+      .home-title {
+        width: 200px;
+        font-size: 1.5rem;
+      }
+
+      .home-subtitle {
+        width: 200px;
+        font-size: 1rem;
+      }
+    }
+
+    .home-img-container {
+      width: 200px;
+      height: 300px;
+    }
+  }
+}

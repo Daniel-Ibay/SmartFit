@@ -34,6 +34,7 @@
       border: 0;
       margin: 0;
       border-radius: 50%;
+      cursor: pointer;
 
       svg {
         fill: var(--gray-dark);
@@ -63,5 +64,21 @@
       transform: scale(110%);
       transition-duration: 300ms;
     }
+  }
+}
+
+@media (max-width: 1800px) {
+}
+
+@media (max-width: 1700px) {
+  .header {
+    padding: 2rem 2rem;
+    margin: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 2rem;
   }
 }
